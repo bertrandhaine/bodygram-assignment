@@ -1,16 +1,8 @@
 import styled from "styled-components";
 
-export const TrafficLightContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const LightContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100px;
   height: 300px;
 `;

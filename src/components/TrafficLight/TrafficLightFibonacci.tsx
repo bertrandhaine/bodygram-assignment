@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import { TrafficLightContainer } from "./ui/TrafficLight.styled";
 import TrafficLight from "./ui/TrafficLight";
 import { useStartCalculations, useFibonacciGenerator } from "./hooks";
 import { TrafficLightState } from "./types";
@@ -59,13 +58,7 @@ export const TrafficLightFibonacci: React.FC<{ initialStep: number }> = ({
   }, [state, currentStep, initialStep]);
 
   return (
-    <TrafficLightContainer>
-      <TrafficLight
-        initialStep={initialStep}
-        state={state}
-        number={fibNumber}
-      />
-    </TrafficLightContainer>
+    <TrafficLight initialStep={initialStep} state={state} number={fibNumber} />
   );
 };
 
