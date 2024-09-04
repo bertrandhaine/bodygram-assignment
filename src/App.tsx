@@ -1,5 +1,5 @@
 import React from "react";
-import { AppContainer, Button, TrafficLightGroup } from "./App.styled";
+import { AppContainer, Button, Title, TrafficLightGroup } from "./App.styled";
 import TrafficLightFibonacci from "./components/TrafficLight";
 import { EVENT_START_CALCULATIONS } from "./constants";
 
@@ -13,7 +13,7 @@ const App: React.FC = () => {
   };
   return (
     <AppContainer>
-      <h1>Fibonacci Traffic Light</h1>
+      <Title>Fibonacci Traffic Light</Title>
       <TrafficLightGroup>
         {initialSteps.map((initialStep, index) => (
           <TrafficLightFibonacci key={index} initialStep={initialStep} />

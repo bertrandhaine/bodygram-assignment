@@ -9,7 +9,7 @@ export const AppContainer = styled.div`
 
 export const TrafficLightGroup = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   max-width: 100%;
   gap: 20px;
@@ -20,4 +20,8 @@ export const Button = styled.button`
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+`;
+
+export const Title = styled.h1`
+  text-align: center;
 `;
